@@ -1,0 +1,87 @@
+/* ============================================================
+   HOJA DE ESTILOS EXTERNA — estilos.css
+   Vinculada desde index.html mediante <link rel="stylesheet">
+   ============================================================ */
+
+/* --- Importación de Google Font "Roboto" desde la web ---
+   Esto trae la fuente Roboto directamente de los servidores de Google.
+   Se importa al inicio del CSS para que esté disponible en todo el archivo. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* --- Estilos generales del body (página completa) ---
+   Usamos background neutro para que el div resalte sobre él. */
+body {
+  background-color: #ffffff; /* Fondo blanco para la página */
+  margin: 0;                 /* Elimina el margen por defecto del navegador */
+  padding: 20px;             /* Pequeño respiro interior en la página */
+}
+
+/* --- Estilos del div contenedor principal ---
+   Este bloque aplica todas las propiedades visuales pedidas. */
+.contenedor {
+
+  /* ANCHO: el div ocupa el 80% del ancho de su elemento padre (el body).
+     Esto hace que en pantallas grandes no sea demasiado ancho. */
+  width: 80%;
+
+  /* CENTRADO HORIZONTAL: margin auto a los lados centra cualquier elemento
+     en bloque que tenga un ancho definido. */
+  margin: 20px auto;
+  /* ↑ "20px" es el margen superior e inferior, "auto" centra horizontalmente */
+
+  /* MARGEN INTERNO (padding): espacio entre el borde del div y su contenido.
+     15px en los cuatro lados (arriba, derecha, abajo, izquierda). */
+  padding: 15px;
+
+  /* FONDO GRIS MUY CLARO: valor hexadecimal cercano al blanco con toque gris. */
+  background-color: #f5f5f5;
+
+  /* BORDE SUTIL DE COLOR CLARO:
+     - 1px de grosor (muy fino = sutil)
+     - "solid" = línea continua
+     - #d0d0d0 = gris claro (no negro, no llamativo) */
+  border: 1px solid #d0d0d0;
+
+  /* BORDER-RADIUS opcional: esquinas levemente redondeadas para suavizar el borde */
+  border-radius: 6px;
+}
+
+/* --- Estilos para el titular <h1> dentro del div ---
+   Se usa Times New Roman, una fuente serif clásica con presencia.
+   El tamaño es mayor que el del párrafo para establecer jerarquía visual. */
+.contenedor h1 {
+  font-family: 'Times New Roman', Times, serif;
+  /* ↑ Times New Roman primero; si no está disponible, usa "Times" o cualquier serif */
+
+  font-size: 2rem;
+  /* ↑ "rem" es relativo al tamaño base del navegador (generalmente 16px).
+       2rem = 32px aprox. Mayor que el texto del párrafo. */
+
+  color: #222222;            /* Color oscuro para buen contraste sobre fondo claro */
+  margin-top: 0;             /* Elimina el margen superior por defecto del h1 */
+  margin-bottom: 10px;       /* Pequeño espacio entre el título y el párrafo */
+}
+
+/* --- Estilos para el párrafo <p> dentro del div ---
+   Usa Google Font Roboto, tamaño mediano, estilo normal (no cursiva). */
+.contenedor p {
+  font-family: 'Roboto', sans-serif;
+  /* ↑ Fuente Roboto importada de Google Fonts. "sans-serif" es el respaldo
+       por si Roboto no carga (ej: sin conexión). */
+
+  font-size: 1rem;
+  /* ↑ Tamaño mediano: 1rem = 16px base del navegador (tamaño de lectura estándar) */
+
+  font-style: normal;
+  /* ↑ Estilo normal: asegura que NO sea cursiva (italic).
+       Aunque "normal" es el valor por defecto, se declara explícitamente
+       para que quede documentado en el código. */
+
+  font-weight: 400;
+  /* ↑ Peso 400 = Regular (ni negrita ni thin). Es el peso "Roboto" que
+       se importó en el @import de arriba. */
+
+  line-height: 1.6;          /* Interlineado cómodo para lectura */
+  color: #444444;            /* Gris oscuro para el texto, más suave que negro puro */
+  margin: 0;                 /* Sin margen extra en el párrafo */
+}
