@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- DOCTYPE le indica al navegador que este es un documento HTML5 moderno -->
+
+<html lang="es">
+<!-- <html> es el elemento raíz de toda la página.
+     lang="es" declara el idioma español, importante para accesibilidad y SEO -->
+
+<head>
+  <!-- <head> contiene metadatos: información sobre la página, no contenido visible -->
+
+  <meta charset="UTF-8">
+  <!-- charset="UTF-8" permite mostrar caracteres especiales como ñ, á, é, etc. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport hace que la página se adapte al ancho del dispositivo (responsive).
+       Sin esto, en móviles la página se vería muy pequeña. -->
+
+  <title>Div Estilizado — Ejercicio CSS Externo</title>
+  <!-- <title> es el texto que aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="estilos.css">
+  <!-- <link> vincula la hoja de estilos EXTERNA llamada "estilos.css".
+       - rel="stylesheet" le dice al navegador que es una hoja de estilo CSS
+       - href="estilos.css" es la ruta al archivo CSS (debe estar en la misma carpeta)
+       Sin esta línea, el CSS no tendría efecto sobre el HTML. -->
+
+</head>
+
+<body>
+  <!-- <body> contiene todo el contenido visible de la página -->
+
+  <!-- =====================================================
+       DIV CONTENEDOR PRINCIPAL
+       La clase "contenedor" conecta este div con los
+       estilos definidos en estilos.css (.contenedor { ... })
+       ===================================================== -->
+  <div class="contenedor">
+
+    <!-- Titular principal: usa Times New Roman según el CSS.
+         Es el elemento de mayor jerarquía visual dentro del div. -->
+    <h1>Diseño y Tipografía</h1>
+
+    <!-- Párrafo con Google Font Roboto, tamaño mediano, estilo normal.
+         El CSS aplicará automáticamente todos sus estilos a este <p>. -->
+    <p>
+      Este párrafo utiliza la tipografía <strong>Roboto</strong> de Google Fonts,
+      con tamaño mediano y estilo normal. El div que lo contiene tiene un ancho
+      del 80%, está centrado en la página, con fondo gris muy claro, borde sutil
+      de color claro, margen exterior de 20px y margen interno (padding) de 15px.
+    </p>
+
+  </div>
+  <!-- Fin del div.contenedor -->
+
+</body>
+<!-- Fin del contenido visible -->
+
+</html>
+<!-- Fin del documento HTML -->
