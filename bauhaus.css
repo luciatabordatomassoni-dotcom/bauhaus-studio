@@ -621,4 +621,36 @@ a {
   .project-card.reverse {
     direction: ltr;
   }
+   /* =============================================
+   DIV EJERCICIO — Requisitos de actividad
+   ============================================= */
+
+.contenedor-ejercicio {
+  width: 80%;                    /* Ancho del 80% de la página */
+  margin: 20px auto;             /* 20px arriba/abajo, auto = centrado horizontal */
+  padding: 15px;                 /* Margen interno de 15px en los 4 lados */
+  background-color: #f5f0e8;     /* Tu mismo fondo crema de la página */
+  border: 1px solid #7a7a7a;     /* Borde sutil usando tu variable --mid */
+  border-radius: 6px;
+}
+
+.contenedor-ejercicio__titulo {
+  font-family: 'Oswald', sans-serif;   /* Tu fuente original */
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0d0d0d;
+  margin-bottom: 10px;
+}
+
+.contenedor-ejercicio__texto {
+  font-family: 'Source Serif 4', serif; /* Tu fuente original */
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8;
+  color: #2a2a2a;
+  max-width: 100%;
+}
 }
